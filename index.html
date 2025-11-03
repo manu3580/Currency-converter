@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="index.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+  />
+</head>
+<body>
+  <div class="container">
+    <h1>💱 Currency Converter</h1>
+    <button id="theme-toggle" title="Toggle Dark Mode">
+    <i class="fa-solid fa-moon"></i>
+  </button>
+    <div class="input-amt-container">
+      <p>Enter your amount</p>
+      <input type="number" class="input" value="1" min="0" />
+    </div>
+
+    <div class="selection">
+      <div class="selection-container">
+        <p>From</p>
+        <div class="select-box">
+          <img src="https://flagsapi.com/US/flat/64.png" alt="from-flag" />
+          <select id="from"></select>
+        </div>
+      </div>
+
+      <i class="fa-solid fa-right-left exchange-icon"></i>
+
+      <div class="selection-container">
+        <p>To</p>
+        <div class="select-box">
+          <img src="https://flagsapi.com/IN/flat/64.png" alt="to-flag" />
+          <select id="to"></select>
+        </div>
+      </div>
+    </div>
+
+    <div class="output">1 USD = 83.12 INR</div>
+    <button type="button" id="submit">Convert</button>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
